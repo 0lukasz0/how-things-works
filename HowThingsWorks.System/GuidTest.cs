@@ -6,7 +6,7 @@ namespace HowThingsWorks.System
     class GuidTest
     {
         [Test]
-        public void CreatingNewGUIDs()
+        public void CreatingNewGuids()
         {
             Guid empty = new Guid();
             Assert.AreEqual(Guid.Empty, empty);
@@ -16,7 +16,7 @@ namespace HowThingsWorks.System
         }
 
         [Test]
-        public void CreatingNewGUIDsFromStrings()
+        public void CreatingNewGuidsFromStrings()
         {
             var noDashes = new Guid("030B4A821B7C11CF9D5300AA003C9CB6");
             var withDashes = new Guid("030B4A82-1B7C-11CF-9D53-00AA003C9CB6");
